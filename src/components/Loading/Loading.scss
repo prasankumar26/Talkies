@@ -1,0 +1,79 @@
+.loader {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .container-new {
+    height: 200px;
+    background: black;
+    width: 100%;
+    position: relative;
+  }
+  .pac::before,
+  .pac::after {
+    z-index: 1;
+    position: absolute;
+    content: "";
+    background: #ffff00;
+    width: 50px;
+    height: 25px;
+    left: 75px;
+  }
+  
+  .pac::before {
+    top: 75px;
+    border-radius: 25px 25px 0 0;
+    transform-origin: 50% 100%;
+    animation: topFace 1s linear infinite;
+  }
+  .pac::after {
+    bottom: 75px;
+    border-radius: 0 0 25px 25px;
+    transform-origin: 50% 0;
+    animation: bottomFace 1s linear infinite;
+  }
+  @keyframes topFace {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-30deg);
+    }
+  }
+  @keyframes bottomFace {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(30deg);
+    }
+  }
+  .food-container {
+    position: absolute;
+    left: 150px;
+    top: 75px;
+    width: 800px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .food {
+    width: 10px;
+    height: 10px;
+    background: #ffff00;
+    border-radius: 50%;
+    animation: move-left 1s linear infinite;
+  }
+  @keyframes move-left {
+    to {
+      transform: translatex(-100px);
+    }
+  }
