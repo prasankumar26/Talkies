@@ -21,6 +21,7 @@ const MovieDetail = () => {
     return () =>{
       dispatch(removeMoviesOrShow())
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   },[dispatch, imdbID])
 
 

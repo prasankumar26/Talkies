@@ -25,19 +25,22 @@ const MovieListing = () => {
   let movieText = "Harry"
   useEffect(() =>{
     dispatch(fetchMovies(movieText)) 
-  }, [dispatch,movieText])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dispatch])
 
   // fetchShows 
   let showText = "Spider"
   useEffect(() =>{
     dispatch(fetchShows(showText)) 
-  }, [dispatch,showText])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dispatch])
 
   // fetchEpisode 
   let showEpisode = "Mission"
   useEffect(() =>{
 dispatch(fetchEpisode(showEpisode))
-  }, [dispatch,showEpisode])
+// eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [dispatch])
 
   let renderMovies = "";
 
