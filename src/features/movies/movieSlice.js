@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
-import { useEffect } from 'react'
 
 import MovieAPi from '../../common/apis/MovieApi'
 import {APIKey} from '../../common/apis/MovieApiKey'

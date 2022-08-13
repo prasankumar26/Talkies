@@ -25,19 +25,19 @@ const MovieListing = () => {
   let movieText = "Harry"
   useEffect(() =>{
     dispatch(fetchMovies(movieText)) 
-  }, [dispatch])
+  }, [dispatch,movieText])
 
   // fetchShows 
   let showText = "Spider"
   useEffect(() =>{
     dispatch(fetchShows(showText)) 
-  }, [dispatch])
+  }, [dispatch,showText])
 
   // fetchEpisode 
   let showEpisode = "Mission"
   useEffect(() =>{
 dispatch(fetchEpisode(showEpisode))
-  }, [dispatch])
+  }, [dispatch,showEpisode])
 
   let renderMovies = "";
 

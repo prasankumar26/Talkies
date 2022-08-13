@@ -21,7 +21,7 @@ const MovieDetail = () => {
     return () =>{
       dispatch(removeMoviesOrShow())
     }
-  },[imdbID])
+  },[dispatch, imdbID])
 
 
   const {selectMS} = useSelector((state) => state.movies)
