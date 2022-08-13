@@ -10,7 +10,6 @@ const initialState = {
     shows: [],
     selectMS: {},
     episode:[],
-    error: false,
   }
   
 
@@ -128,7 +127,6 @@ export const movieSlice = createSlice({
       },
       [fetchEpisode.reject]: (state) =>{
       state.isLoading = false
-      state.error = true
       },
   }
 })

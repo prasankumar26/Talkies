@@ -19,7 +19,7 @@ const MovieListing = () => {
   const {movies, shows, isLoading, episode} = useSelector((state) => state.movies)
   const dispatch = useDispatch()
 
-  // console.log(episode);
+  // console.log(movies, shows, isLoading, episode);
 
   // fetchMovies 
   let movieText = "Harry"
